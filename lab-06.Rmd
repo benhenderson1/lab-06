@@ -27,7 +27,10 @@ diamonds <- diamonds %>% rename(
 ## Exercise 1
 
 ```{r}
-# Do some preliminary investigations & cleaning
+
+count(diamonds, length_mm == "0")
+
+#This suggests that a diamond can have a dimension length of 0mm.
 
 
 

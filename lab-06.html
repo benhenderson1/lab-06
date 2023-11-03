@@ -371,7 +371,13 @@ library(ggplot2)</code></pre>
 </div>
 <div id="exercise-1" class="section level2">
 <h2>Exercise 1</h2>
-<pre class="r"><code># Do some preliminary investigations &amp; cleaning</code></pre>
+<pre class="r"><code>count(diamonds, length_mm == &quot;0&quot;)</code></pre>
+<pre><code>## # A tibble: 2 × 2
+##   `length_mm == &quot;0&quot;`     n
+##   &lt;lgl&gt;              &lt;int&gt;
+## 1 FALSE              53932
+## 2 TRUE                   8</code></pre>
+<pre class="r"><code>#This suggests that a diamond can have a dimension length of 0mm.</code></pre>
 </div>
 <div id="exercise-2" class="section level2">
 <h2>Exercise 2</h2>
